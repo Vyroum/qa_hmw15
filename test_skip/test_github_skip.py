@@ -1,4 +1,4 @@
-import  pytest
+import pytest
 from selene import browser, by
 
 
@@ -7,6 +7,7 @@ def test_desktop(setup_browser):
         pytest.skip("Мобильное разрешение")
     browser.open("http://github.com")
     browser.element(by.text("Sign up")).click()
+
 
 def test_mobile(setup_browser):
     if setup_browser == "desktop":

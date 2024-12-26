@@ -1,6 +1,5 @@
 import pytest
 from selene import browser
-from selenium import webdriver
 
 
 @pytest.fixture(params=[(1920, 1080), (1000, 1080)])
